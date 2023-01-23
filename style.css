@@ -1,0 +1,140 @@
+:root {
+    --top-vertical: 0px;
+    --left-horizontal: 32px;
+    --dimensions-groups: 70px;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(163, 163, 108);
+}
+
+h1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+button {
+    min-width: 2em;
+    font-size: xx-large;
+    background-color: rgba(194, 217, 16, 0.858);
+    border-radius: 5px;
+}
+
+/* dialog {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    width: 20em;
+}
+
+dialog > p {
+    font-size: 20px;
+    font-weight: 500;
+} */
+
+.hideDialog {
+    display: none;
+}
+
+.player {
+    background-color: rgb(234, 214, 188);
+    width: 40vw;
+    border-radius: 10px;
+    margin: 1.5em;
+    text-align: center;
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.actionButtons {
+    position: fixed;
+    top: 5em;
+}
+
+#playersContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    display: flex;
+    justify-content: space-around;    
+}
+
+.reset > button {
+    font-size: x-large
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#matchScore {
+    font-size: x-large;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: var(--dimensions-groups);
+}
+
+.group {
+    position: relative;
+    width: 120px;
+    height: var(--dimensions-groups);
+    margin: 10px;
+}
+
+.match0 {
+    background-color: border-box;
+    position: absolute;
+    transform: rotate(90deg);
+    left: var(--left-horizontal);
+    top: -30px;
+}
+.match1 {
+    background-color: border-box;
+    position: absolute;
+    transform: rotate(180deg);
+    left: 65px;
+    top: var(--top-vertical);
+}
+.match2 {
+    background-color: border-box;
+    position: absolute;
+    transform: rotate(270deg);
+    top: 32px;
+    left: var(--left-horizontal);
+}
+.match3 {
+    background-color: border-box;
+    position: absolute;
+    transform: rotate(0deg);
+    left: 0px;
+    top: var(--top-vertical);
+}
+.match4 {
+    background-color: border-box;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 34px;
+    top: 0px;
+}
